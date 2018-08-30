@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.page-container{
+  position: relative;
+  background-color: #fff;
+  height: calc(100vh - 107px);
+  color: #212529;
+  margin: 0;
+  padding: 0 3px;
+  overflow-y: auto;
+}
+.page-head{
+  position: relative;
+  background-color: #3a5e93;
+  margin: 0 -15px;
+  padding: 7px 15px;
+}
+
+.page-head img{
+  height: 20px;
+}
+
+.logout-btn{
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.logout-btn:hover{
+  text-decoration: none;
+}
+
+.card-list-container{
+  height: 100%;
+  margin: 0 -15px;
+}
+.card-list{
+  height: 71px;
+  color: #777;
+  display: block;
+  transition: .1s all ease-in-out;
+  cursor: pointer;
+}
+.card-list:hover{
+  text-decoration: none;
+  background-color: #eee;
+}
+.card-list .card-photo{
+  float: left;
+  margin: 10px 15px 10px 15px;
+}
+.card-list .card-photo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.card-list .card-data{
+  padding: 10px 100px 10px 0;
+  margin: 0 0 0 80px;
+  height: 71px;
+  border-bottom: 1px solid #eee;
+}
+.card-list .card-data .card-name, .card-list .card-data .card-time{
+  /* width: 100%; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.card-list .card-data .card-name, .card-list .card-data-right .patient-number{
+  color: #212529;
+}
+.card-list .card-data-right{
+  float: right;
+  text-align: right;
+  margin: 0 auto;
+  padding: 2px 0
+}
